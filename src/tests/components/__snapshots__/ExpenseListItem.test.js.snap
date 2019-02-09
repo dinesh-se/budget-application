@@ -10,10 +10,11 @@ exports[`should render ExpenseListItem with an expense 1`] = `
       house rent
     </Link>
   </h3>
-  1500000
-  -
-  0
-   
+  <p>
+    $15,000.00
+    -
+    January 1st, 1970
+  </p>
   <button
     onClick={[Function]}
   >
