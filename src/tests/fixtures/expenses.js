@@ -5,13 +5,15 @@ export default [
     id: '1',
     description: 'house rent',
     amount: 1500000,
-    createdAt: 0
+    createdAt: 0,
+    note: ''
   },
   {
     id: '2',
     description: 'bike rent',
     amount: 150000,
-    createdAt: moment(0).subtract(4, 'days').valueOf()
+    createdAt: moment(0).subtract(4, 'days').valueOf(),
+    note: ''
   },
   {
     id: '3',

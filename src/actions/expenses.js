@@ -1,4 +1,3 @@
-import uuid from 'uuid';
 import db from '../firebase/firebase';
 
 // ACTION HELPER - EXPENSE REDUCER
@@ -36,3 +35,24 @@ export const editExpense = (id, updates) => ({
   id,
   updates
 });
+
+export const setExpenses = (expenses) => ({
+  type: 'SET_EXPENSES',
+  expenses
+});
+
+export const startSetExpenses = () => {
+  return (dispatch) => {
+    const expenses = [];
+    return db.ref('expenses')
+      .once('value', (snapshot) => {
+        snapshot.forEach((childSnapshot) => {
+          expenses.push({
+            id: childSnapshot.key,
+            ...childSnapshot.val()
+          })
+        });
+        dispatch(setExpenses(expenses));
+      });
+  }
+};

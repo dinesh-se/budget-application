@@ -16,6 +16,7 @@ exports[`should render ExpenseList with expenses 1`] = `
     description="house rent"
     id="1"
     key="1"
+    note=""
   />
   <Connect(ExpenseListItem)
     amount={150000}
@@ -23,6 +24,7 @@ exports[`should render ExpenseList with expenses 1`] = `
     description="bike rent"
     id="2"
     key="2"
+    note=""
   />
   <Connect(ExpenseListItem)
     amount={10000000}
