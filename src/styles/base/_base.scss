@@ -2,13 +2,19 @@
 // 1 rem = 16px
 // 16 * .625 = 10 -> this results in 1rem = 10px
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
+  color: $dark-grey;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
+  line-height: 1.6;
 }
 
 button {
