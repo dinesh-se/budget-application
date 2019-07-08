@@ -1,3 +1,3 @@
 # Performance testing
 
--- sample folder --
+-- ready to remove folder --
